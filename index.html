@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comparateur des aides aux enfants — Modèle actuel vs. Allocation unique</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- CSS Tailwind precompile (build statique, sans avertissement console ni dependance CDN en production) -->
+    <style>
+*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.19 | MIT License | https://tailwindcss.com*/*,:after,:before{box-sizing:border-box;border:0 solid #e5e7eb}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.-top-6{top:-1.5rem}.bottom-1{bottom:.25rem}.bottom-full{bottom:100%}.left-1\/2{left:50%}.right-1{right:.25rem}.right-2{right:.5rem}.top-1{top:.25rem}.top-2{top:.5rem}.z-0{z-index:0}.z-10{z-index:10}.z-30{z-index:30}.mx-auto{margin-left:auto;margin-right:auto}.my-0\.5{margin-top:.125rem;margin-bottom:.125rem}.my-4{margin-top:1rem;margin-bottom:1rem}.mb-0\.5{margin-bottom:.125rem}.mb-1{margin-bottom:.25rem}.mb-1\.5{margin-bottom:.375rem}.mt-0\.5{margin-top:.125rem}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-2{height:.5rem}.h-2\.5{height:.625rem}.h-3{height:.75rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-full{height:100%}.h-px{height:1px}.min-h-screen{min-height:100vh}.w-2\.5{width:.625rem}.w-24{width:6rem}.w-28{width:7rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-\[45\%\]{width:45%}.w-full{width:100%}.min-w-\[550px\]{min-width:550px}.max-w-2xl{max-width:42rem}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-shrink-0{flex-shrink:0}.border-collapse{border-collapse:collapse}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-crosshair{cursor:crosshair}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;-moz-user-select:none;user-select:none}.appearance-none{-webkit-appearance:none;-moz-appearance:none;appearance:none}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.flex-col{flex-direction:column}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-0\.5{gap:.125rem}.gap-1\.5{gap:.375rem}.gap-2{gap:.5rem}.gap-4{gap:1rem}.gap-\[1px\]{gap:1px}.gap-\[2px\]{gap:2px}.space-y-1>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.25rem*var(--tw-space-y-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.5rem*var(--tw-space-y-reverse))}.space-y-2\.5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(.625rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(.625rem*var(--tw-space-y-reverse))}.space-y-5>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem*var(--tw-space-y-reverse))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem*var(--tw-space-y-reverse))}.space-y-8>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem*var(--tw-space-y-reverse))}.divide-y>:not([hidden])~:not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px*var(--tw-divide-y-reverse))}.divide-slate-100>:not([hidden])~:not([hidden]){--tw-divide-opacity:1;border-color:rgb(241 245 249/var(--tw-divide-opacity,1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:.5rem}.rounded-sm{border-radius:.125rem}.rounded-xl{border-radius:.75rem}.rounded-b-md{border-bottom-right-radius:.375rem;border-bottom-left-radius:.375rem}.rounded-t-\[1px\]{border-top-left-radius:1px;border-top-right-radius:1px}.rounded-t-md{border-top-left-radius:.375rem;border-top-right-radius:.375rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l{border-left-width:1px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-indigo-100\/70{border-color:rgba(224,231,255,.7)}.border-indigo-200{--tw-border-opacity:1;border-color:rgb(199 210 254/var(--tw-border-opacity,1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249/var(--tw-border-opacity,1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240/var(--tw-border-opacity,1))}.border-slate-200\/60{border-color:rgba(226,232,240,.6)}.border-slate-200\/80{border-color:rgba(226,232,240,.8)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85/var(--tw-border-opacity,1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59/var(--tw-border-opacity,1))}.border-slate-800\/80{border-color:rgba(30,41,59,.8)}.border-white\/20{border-color:hsla(0,0%,100%,.2)}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229/var(--tw-bg-opacity,1))}.bg-emerald-50\/40{background-color:rgba(236,253,245,.4)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity,1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity,1))}.bg-indigo-200{--tw-bg-opacity:1;background-color:rgb(199 210 254/var(--tw-bg-opacity,1))}.bg-indigo-400{--tw-bg-opacity:1;background-color:rgb(129 140 248/var(--tw-bg-opacity,1))}.bg-indigo-50\/40{background-color:rgba(238,242,255,.4)}.bg-indigo-500{--tw-bg-opacity:1;background-color:rgb(99 102 241/var(--tw-bg-opacity,1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229/var(--tw-bg-opacity,1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230/var(--tw-bg-opacity,1))}.bg-rose-400{--tw-bg-opacity:1;background-color:rgb(251 113 133/var(--tw-bg-opacity,1))}.bg-rose-50\/35{background-color:rgba(255,241,242,.35)}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249/var(--tw-bg-opacity,1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.bg-slate-200\/70{background-color:rgba(226,232,240,.7)}.bg-slate-300{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.bg-slate-400{--tw-bg-opacity:1;background-color:rgb(148 163 184/var(--tw-bg-opacity,1))}.bg-slate-50{--tw-bg-opacity:1;background-color:rgb(248 250 252/var(--tw-bg-opacity,1))}.bg-slate-50\/30{background-color:rgba(248,250,252,.3)}.bg-slate-50\/40{background-color:rgba(248,250,252,.4)}.bg-slate-50\/50{background-color:rgba(248,250,252,.5)}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139/var(--tw-bg-opacity,1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity,1))}.bg-slate-900{--tw-bg-opacity:1;background-color:rgb(15 23 42/var(--tw-bg-opacity,1))}.bg-slate-950{--tw-bg-opacity:1;background-color:rgb(2 6 23/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.from-indigo-500{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgba(99,102,241,0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.p-2{padding:.5rem}.p-2\.5{padding:.625rem}.p-3{padding:.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-1{padding-left:.25rem;padding-right:.25rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-2\.5{padding-left:.625rem;padding-right:.625rem}.px-3{padding-left:.75rem;padding-right:.75rem}.py-1{padding-top:.25rem;padding-bottom:.25rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-2\.5{padding-top:.625rem;padding-bottom:.625rem}.pb-1{padding-bottom:.25rem}.pb-2{padding-bottom:.5rem}.pb-5{padding-bottom:1.25rem}.pl-3{padding-left:.75rem}.pr-7{padding-right:1.75rem}.pt-1{padding-top:.25rem}.pt-2{padding-top:.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-left{text-align:left}.text-center{text-align:center}.font-sans{font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[7px\]{font-size:7px}.text-\[8px\]{font-size:8px}.text-\[9px\]{font-size:9px}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.normal-case{text-transform:none}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-.025em}.tracking-wide{letter-spacing:.025em}.tracking-wider{letter-spacing:.05em}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105/var(--tw-text-opacity,1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70/var(--tw-text-opacity,1))}.text-emerald-900{--tw-text-opacity:1;color:rgb(6 78 59/var(--tw-text-opacity,1))}.text-indigo-200{--tw-text-opacity:1;color:rgb(199 210 254/var(--tw-text-opacity,1))}.text-indigo-300{--tw-text-opacity:1;color:rgb(165 180 252/var(--tw-text-opacity,1))}.text-indigo-400{--tw-text-opacity:1;color:rgb(129 140 248/var(--tw-text-opacity,1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity,1))}.text-indigo-900{--tw-text-opacity:1;color:rgb(49 46 129/var(--tw-text-opacity,1))}.text-indigo-950{--tw-text-opacity:1;color:rgb(30 27 75/var(--tw-text-opacity,1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94/var(--tw-text-opacity,1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57/var(--tw-text-opacity,1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225/var(--tw-text-opacity,1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184/var(--tw-text-opacity,1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139/var(--tw-text-opacity,1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105/var(--tw-text-opacity,1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59/var(--tw-text-opacity,1))}.text-slate-900{--tw-text-opacity:1;color:rgb(15 23 42/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.accent-indigo-600{accent-color:#4f46e5}.opacity-80{opacity:.8}.opacity-90{opacity:.9}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-2xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgba(0,0,0,.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color)}.shadow-inner,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.duration-300{transition-duration:.3s}.duration-500{transition-duration:.5s}.hover\:bg-slate-200:hover{--tw-bg-opacity:1;background-color:rgb(226 232 240/var(--tw-bg-opacity,1))}.hover\:bg-slate-50\/50:hover{background-color:rgba(248,250,252,.5)}.hover\:text-slate-700:hover{--tw-text-opacity:1;color:rgb(51 65 85/var(--tw-text-opacity,1))}.focus\:border-slate-400:focus{--tw-border-opacity:1;border-color:rgb(148 163 184/var(--tw-border-opacity,1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.active\:bg-slate-300:active{--tw-bg-opacity:1;background-color:rgb(203 213 225/var(--tw-bg-opacity,1))}.group:hover .group-hover\:block{display:block}@media (min-width:640px){.sm\:col-span-2{grid-column:span 2/span 2}.sm\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.sm\:gap-1{gap:.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-8{padding:2rem}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}}
+/* Masque les fleches natives du navigateur sur les champs equipes d'un stepper custom (Chrome/Edge/Safari + Firefox) */
+.no-native-spin::-webkit-outer-spin-button,
+.no-native-spin::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
+.no-native-spin { -moz-appearance: textfield; appearance: textfield; }
+    </style>
     <!-- GoatCounter analytics -->
     <script data-goatcounter="https://justice-enfants.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
+            async src="https://gc.zgo.at/count.js"></script>
 </head>
 <body class="bg-slate-50 min-h-screen flex flex-col items-center p-4 sm:p-6 font-sans text-slate-900 antialiased">
 
@@ -17,8 +24,8 @@
             <div class="inline-flex items-center gap-1.5 text-indigo-600 text-[11px] font-bold tracking-wider uppercase mb-1.5">
                 Simulation pédagogique • Outil indépendant
             </div>
-            <h1 class="text-2xl font-black tracking-tight text-slate-900">
-                « Un enfant vaut un enfant »
+            <h1 class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 px-2">
+                « Un enfant vaut un&nbsp;enfant&nbsp;»
             </h1>
             <p class="text-xs text-slate-500 mt-1 max-w-md mx-auto leading-relaxed">
                 Comparez le système actuel <strong>(quotient familial + allocations de base)</strong> avec une <strong>allocation unique universelle</strong> par enfant dès le premier enfant.
@@ -41,13 +48,32 @@
                 </div>
                 <div>
                     <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">Enfants à charge</label>
-                    <input type="number" id="children" min="1" max="10" value="1" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-3 py-2.5 text-xs font-bold text-slate-800 focus:outline-none" oninput="calculate()">
+                    <div class="relative">
+                        <input type="number" id="children" min="1" max="10" value="1" inputmode="numeric" class="no-native-spin w-full bg-slate-50 border border-slate-200 rounded-xl pl-3 pr-7 py-2.5 text-xs font-bold text-slate-800 focus:outline-none focus:border-slate-400" oninput="calculate()">
+                        <div class="stepper-control absolute right-1 top-1 bottom-1 w-6 flex flex-col">
+                            <button type="button" aria-label="Augmenter le nombre d'enfants" onclick="adjustChildren(1)" tabindex="-1" class="flex-1 flex items-center justify-center rounded-t-md text-slate-400 hover:bg-slate-200 hover:text-slate-700 active:bg-slate-300">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="currentColor"><path d="M4 0l4 5H0z"/></svg>
+                            </button>
+                            <div class="h-px bg-slate-200"></div>
+                            <button type="button" aria-label="Diminuer le nombre d'enfants" onclick="adjustChildren(-1)" tabindex="-1" class="flex-1 flex items-center justify-center rounded-b-md text-slate-400 hover:bg-slate-200 hover:text-slate-700 active:bg-slate-300">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="currentColor"><path d="M4 5L0 0h8z"/></svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
                 <div>
-                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">Revenu mensuel net du foyer</label>
+                    <label class="block text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-1">Revenu net du foyer <span class="text-slate-400 font-normal normal-case">(€/mois)</span></label>
                     <div class="relative">
-                        <input type="number" id="income" min="0" value="3600" step="100" class="w-full bg-slate-50 border border-slate-200 rounded-xl pl-3 pr-12 py-2.5 text-xs font-extrabold text-slate-900 focus:outline-none" oninput="calculate()">
-                        <span class="absolute right-3 top-3 text-[10px] font-bold text-slate-400">€/mois</span>
+                        <input type="number" id="income" min="0" value="3600" step="100" inputmode="numeric" class="no-native-spin w-full bg-slate-50 border border-slate-200 rounded-xl pl-3 pr-7 py-2.5 text-xs font-extrabold text-slate-900 focus:outline-none focus:border-slate-400" oninput="calculate()">
+                        <div class="stepper-control absolute right-1 top-1 bottom-1 w-6 flex flex-col">
+                            <button type="button" aria-label="Augmenter le revenu" onclick="adjustIncome(100)" tabindex="-1" class="flex-1 flex items-center justify-center rounded-t-md text-slate-400 hover:bg-slate-200 hover:text-slate-700 active:bg-slate-300">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="currentColor"><path d="M4 0l4 5H0z"/></svg>
+                            </button>
+                            <div class="h-px bg-slate-200"></div>
+                            <button type="button" aria-label="Diminuer le revenu" onclick="adjustIncome(-100)" tabindex="-1" class="flex-1 flex items-center justify-center rounded-b-md text-slate-400 hover:bg-slate-200 hover:text-slate-700 active:bg-slate-300">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="currentColor"><path d="M4 5L0 0h8z"/></svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -91,7 +117,7 @@
                 <div class="flex items-center gap-4">
                     <input type="range" id="newAmountSlider" min="50" max="300" value="110" step="5" class="w-full h-2 bg-indigo-200 rounded-lg appearance-none cursor-pointer accent-indigo-600" oninput="syncSliderToInput(this.value)">
                     <div class="relative w-28 flex-shrink-0">
-                        <input type="number" id="newAmount" min="50" max="300" value="110" step="5" class="w-full bg-white border border-indigo-200 rounded-xl px-3 py-1.5 text-sm font-black text-indigo-900 text-center focus:outline-none" oninput="syncInputToSlider(this.value)">
+                        <input type="number" id="newAmount" min="50" max="300" value="110" step="5" inputmode="numeric" class="no-native-spin w-full bg-white border border-indigo-200 rounded-xl px-3 py-1.5 text-sm font-black text-indigo-900 text-center focus:outline-none" oninput="syncInputToSlider(this.value)">
                         <span class="absolute right-2 top-2 text-[10px] font-bold text-indigo-400">€/m</span>
                     </div>
                 </div>
@@ -99,7 +125,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center bg-slate-50/50 p-4 rounded-2xl border border-slate-200/60">
                 <div>
-                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-0.5">Bilan budgétaire de l'État</div>
+                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400 mb-0.5">Effet net sur les dépenses publiques <span class="block text-[8px] font-normal text-slate-400 normal-case">(périmètre simulé uniquement)</span></div>
                     <div id="macro-budget" class="text-xs font-black px-3 py-1.5 rounded-xl inline-block">—</div>
                 </div>
                 <div class="sm:col-span-2 space-y-1">
@@ -157,7 +183,7 @@
             <div class="space-y-2">
                 <div class="text-center">
                     <h3 class="text-xs font-bold text-slate-800 uppercase tracking-wide">Foyers gagnants vs. perdants par catégorie</h3>
-                    <p class="text-[9px] text-slate-400 mt-0.5">Répartition stricte par **revenu disponible réel par parent** (salaires non cumulés dans les couples) pour une lecture équitable.</p>
+                    <p class="text-[9px] text-slate-400 mt-0.5">Répartition stricte par <strong>revenu disponible réel par parent</strong> (salaires non cumulés dans les couples) pour une lecture équitable.</p>
                 </div>
 
                 <div class="overflow-x-auto border border-slate-200 rounded-xl bg-white shadow-sm">
@@ -181,17 +207,23 @@
 
         <section class="pt-6 border-t border-slate-200/80 text-[10px] text-slate-400 space-y-2 bg-slate-50/50 p-4 rounded-2xl border border-slate-100">
             <p class="font-bold text-slate-500 uppercase tracking-wide mb-1 text-[11px]">Notes méthodologiques & Périmètre de simulation</p>
-            <p>• <strong>Périmètre de la jauge budgétaire :</strong> Cette simulation s'effectue exclusivement sur le cumul de <strong>l'avantage fiscal du Quotient Familial (IR)</strong> et des <strong>Allocations Familiales de base de la CAF</strong>. Elle exclut volontairement l'ARS, la Paje, les bourses de l'Éducation Nationale ou les aides locales.</p>
-            <p>• <strong>Modèle de calcul fiscal :</strong> Barème de l'Impôt sur le Revenu 2024 appliqué avec décote standard (hors profilage complexe de niches fiscales, micro-foncier ou revenus de capitaux). L'abattement de 10 % est appliqué forfaitairement sans plafond (simplification).</p>
-            <p>• <strong>Allocations familiales :</strong> Les montants et les seuils de dégressivité correspondent aux barèmes 2024. Le revenu pris en compte est le revenu net imposable après abattement (cohérent avec la CAF).</p>
-            <p>• <strong>Données de cadrage :</strong> Distribution construite à partir de l'échantillonnage par vingtiles de niveau de vie de l'Insee (base macro-économique redressée pour 9 millions de familles allocataires).</p>
-            <p class="italic text-[9px] pt-1"><strong>Avertissement légal :</strong> Outil de simulation pédagogique indépendant à vocation de débat public. Les résultats individuels et macroéconomiques sont des projections mathématiques indicatives et ne se substituent pas aux simulateurs officiels de la CAF ou de la DGFiP.</p>
+            <p>• <strong>Périmètre de la jauge budgétaire :</strong> Cette simulation porte exclusivement sur le cumul de <strong>l'avantage fiscal du Quotient Familial (IR)</strong> et des <strong>Allocations Familiales de base de la CAF</strong>. Elle exclut volontairement l'ARS, la Paje, le complément familial, les bourses de l'Éducation Nationale ou les aides locales — son résultat ne représente donc pas un solde budgétaire global pour l'État, mais l'effet net sur ce seul périmètre.</p>
+            <p>• <strong>Modèle de calcul fiscal :</strong> Barème de l'impôt sur le revenu en vigueur pour les revenus 2025 (déclaration 2026), avec décote effectivement appliquée (897 € / 1 483 € − 45,25 % de l'impôt brut, selon situation) et plafonnement du quotient familial (1 807 € par demi-part ; 4 262 € pour la part attachée au 1er enfant d'un parent isolé, conformément à l'art. 197 du CGI). Hors niches fiscales, micro-foncier ou revenus du capital. L'abattement de 10 % pour frais professionnels est appliqué forfaitairement sans plancher ni plafond (simplification).</p>
+            <p>• <strong>Allocations familiales :</strong> Montants de base et plafonds de ressources en vigueur en 2026 (152,25 € pour 2 enfants, 347,32 € pour 3 enfants, + 195,07 € par enfant supplémentaire). Le revenu pris en compte est une estimation du revenu net imposable annuel courant, utilisée comme proxy simplifié : la CAF se base en réalité sur le revenu net catégoriel de l'année N-2.</p>
+            <p>• <strong>Données de cadrage macroéconomique :</strong> Population de référence = 7,9 millions de familles ayant au moins un enfant mineur (Insee, recensement 2022, dernière donnée disponible). La répartition par vingtile de niveau de vie, la part de familles monoparentales et la structure par nombre d'enfants sont une <strong>modélisation illustrative</strong> calibrée sur les ordres de grandeur publiés par l'Insee — et non une extraction officielle ligne à ligne. Pour les couples, le revenu individuel par parent est estimé en divisant le revenu du foyer par deux (hypothèse de partage égal, à défaut de donnée individuelle).</p>
+            <p class="italic text-[9px] pt-1"><strong>Sources :</strong> economie.gouv.fr (barème IR et décote), bofip.impots.gouv.fr (plafonds du quotient familial), service-public.gouv.fr (allocations familiales, vérifié 01/06/2026), insee.fr (démographie des familles). <strong>Avertissement légal :</strong> Outil de simulation pédagogique indépendant à vocation de débat public, données à jour à juin 2026. Les résultats individuels et macroéconomiques sont des projections mathématiques indicatives et ne se substituent pas aux simulateurs officiels de la CAF ou de la DGFiP.</p>
         </section>
 
     </main>
 
     <script>
-        // ---- CONSTANTES ----
+        // =====================================================================
+        // CONSTANTES — données vérifiées en juin 2026 (voir notes méthodologiques
+        // et sources en bas de page : economie.gouv.fr, bofip.impots.gouv.fr,
+        // service-public.gouv.fr, insee.fr)
+        // =====================================================================
+
+        // Barème de l'impôt sur le revenu applicable aux revenus 2025 (déclaration 2026)
         const TAX_BRACKETS = [
             { upTo: 11600,    rate: 0    },
             { upTo: 29579,    rate: 0.11 },
@@ -199,11 +231,21 @@
             { upTo: 181917,   rate: 0.41 },
             { upTo: Infinity, rate: 0.45 }
         ];
-        const QF_CEILING_PER_HALF_PART = 1807;  // plafond 2024
-        const TOTAL_FAMILIES = 9000000;
+
+        // Décote (revenus 2025 / déclaration 2026) — economie.gouv.fr
+        const DECOTE = {
+            solo:   { seuil: 1982, forfait: 897  },
+            couple: { seuil: 3277, forfait: 1483 },
+            taux: 0.4525
+        };
+
+        const QF_CEILING_PER_HALF_PART = 1807;        // plafond de droit commun par demi-part, revenus 2025 (BOFiP)
+        const PARENT_ISOLE_CEILING_1ER_ENFANT = 4262;  // plafond renforcé de la part attachée au 1er enfant d'un parent isolé (art. 197 CGI, BOFiP)
+
+        const TOTAL_FAMILIES = 7937000; // Insee, familles avec au moins un enfant mineur (recensement 2022)
 
         // ---- FONCTIONS ----
-        function getTax(rni, parts) {
+        function getTaxBrut(rni, parts) {
             const qf = rni / parts;
             let taxPerPart = 0;
             let previousThreshold = 0;
@@ -217,15 +259,93 @@
             return Math.max(0, taxPerPart * parts);
         }
 
-        // CAF : utilise le revenu net imposable ANNUEL (rni)
+        // Décote : s'applique sur l'impôt brut du foyer (après quotient familial et plafonnement)
+        function applyDecote(taxBrut, isSolo) {
+            const { seuil, forfait } = isSolo ? DECOTE.solo : DECOTE.couple;
+            if (taxBrut >= seuil) return taxBrut;
+            const remise = Math.max(0, forfait - taxBrut * DECOTE.taux);
+            return Math.max(0, taxBrut - remise);
+        }
+
+        function getChildParts(isSolo, children) {
+            let cp = children === 1 ? 0.5 : (children === 2 ? 1 : 1 + (children - 2));
+            if (isSolo && children >= 1) cp += 0.5; // majoration parent isolé, attachée au 1er enfant
+            return cp;
+        }
+
+        // Plafond de l'avantage du quotient familial. Pour un parent isolé, la part
+        // attachée au 1er enfant (0,5 part normale + 0,5 part de majoration = 1 part)
+        // bénéficie d'un plafond renforcé spécifique (4 262 €) ; le reste des parts
+        // liées aux enfants suivants reste plafonné au taux de droit commun.
+        function getQfCeiling(childParts, isSolo) {
+            if (isSolo && childParts > 0) {
+                const firstPart = Math.min(childParts, 1.0);
+                const rest = childParts - firstPart;
+                return PARENT_ISOLE_CEILING_1ER_ENFANT + rest * 2 * QF_CEILING_PER_HALF_PART;
+            }
+            return childParts * 2 * QF_CEILING_PER_HALF_PART;
+        }
+
+        // Avantage fiscal annuel du quotient familial, plafonnement et décote inclus
+        function getQfGainYearly(rni, isSolo, children) {
+            const baseParts = isSolo ? 1 : 2;
+            const childParts = getChildParts(isSolo, children);
+
+            const taxWithoutBrut = getTaxBrut(rni, baseParts);
+            const taxWithBrut = getTaxBrut(rni, baseParts + childParts);
+
+            const ceiling = getQfCeiling(childParts, isSolo);
+            const avantage = Math.min(taxWithoutBrut - taxWithBrut, ceiling);
+            const taxWithAfterPlafond = taxWithoutBrut - avantage;
+
+            const taxWithoutFinal = applyDecote(taxWithoutBrut, isSolo);
+            const taxWithFinal = applyDecote(taxWithAfterPlafond, isSolo);
+
+            return Math.max(0, taxWithoutFinal - taxWithFinal);
+        }
+
+        // CAF : montants de base et plafonds en vigueur en 2026 (service-public.gouv.fr, vérifié 01/06/2026)
+        // Le revenu pris en compte (rni) est une estimation du revenu net imposable annuel
+        // courant, utilisée en proxy simplifié du revenu net catégoriel N-2 réellement
+        // utilisé par la CAF.
         function getCurrentCafAlloc(children, rni) {
             if (children < 2) return 0;
-            let baseAmount = children === 2 ? 141.99 : 323.91 + (children - 3) * 181.92;
-            const p1 = 74650 + Math.max(0, children - 2) * 7465;
-            const p2 = 104469 + Math.max(0, children - 2) * 7465;
+            const baseAmount = children === 2 ? 152.25 : 347.32 + (children - 3) * 195.07;
+            const p1 = 79980 + Math.max(0, children - 2) * 6664;
+            const p2 = 106604 + Math.max(0, children - 2) * 6664;
             if (rni <= p1) return baseAmount;
             else if (rni <= p2) return baseAmount * 0.5;
             else return baseAmount * 0.25;
+        }
+
+        // ---- FONCTIONS UNIFIÉES (utilisées par le calcul individuel ET la simulation macro) ----
+        function computeCurrentMonthlySupport(isSolo, children, monthlyIncome) {
+            const rni = Math.max(0, monthlyIncome) * 12 * 0.90;
+            const qfGainYearly = getQfGainYearly(rni, isSolo, children);
+            const cafMonthly = getCurrentCafAlloc(children, rni);
+            return (qfGainYearly / 12) + cafMonthly;
+        }
+
+        function computeNewMonthlySupport(children, newAmountPerChild) {
+            return children * newAmountPerChild;
+        }
+
+        function adjustChildren(delta) {
+            const input = document.getElementById('children');
+            let val = parseInt(input.value);
+            if (!Number.isFinite(val)) val = 1;
+            val = Math.max(1, Math.min(10, val + delta));
+            input.value = val;
+            calculate();
+        }
+
+        function adjustIncome(delta) {
+            const input = document.getElementById('income');
+            let val = parseFloat(input.value);
+            if (!Number.isFinite(val)) val = 0;
+            val = Math.max(0, val + delta);
+            input.value = val;
+            calculate();
         }
 
         function syncSliderToInput(val) {
@@ -233,11 +353,12 @@
             calculate();
         }
         function syncInputToSlider(val) {
-            let num = parseInt(val) || 0;
-            if (num >= 50 && num <= 300) {
-                document.getElementById('newAmountSlider').value = num;
-                calculate();
-            }
+            let num = parseInt(val);
+            if (!Number.isFinite(num)) num = 50;
+            num = Math.max(50, Math.min(300, num));
+            document.getElementById('newAmount').value = num;
+            document.getElementById('newAmountSlider').value = num;
+            calculate();
         }
 
         function formatFoyerCount(count) {
@@ -249,7 +370,8 @@
 
         // ---- SIMULATION MACRO ----
         function runMacroSimulationAndRenderChart(newAmountPerChild) {
-            // Distribution Insee par vingtiles (revenus mensuels du foyer)
+            // Distribution illustrative par vingtiles de niveau de vie (revenus mensuels du foyer),
+            // calibrée sur les ordres de grandeur publiés par l'Insee (et non une extraction officielle ligne à ligne)
             const populationVingtiles = [
                 { min: 400,  max: 950,   pctSolo: 0.65, marker: "RSA",    wChild: [0.55, 0.32, 0.13] },
                 { min: 950,  max: 1200,  pctSolo: 0.50,                  wChild: [0.52, 0.34, 0.14] },
@@ -298,19 +420,8 @@
                         const monthlyIncomeFoyer = baseFoyerIncome;
                         const individualParentIncome = struct.isSolo ? monthlyIncomeFoyer : (monthlyIncomeFoyer / 2);
 
-                        // Revenu net imposable annuel (abattement forfaitaire 10%)
-                        const rni = (monthlyIncomeFoyer * 12) * 0.90;
-                        const baseParts = struct.isSolo ? 1 : 2;
-
-                        let childParts = children === 1 ? 0.5 : (children === 2 ? 1 : 1 + (children - 2));
-                        if (struct.isSolo && children >= 1) childParts += 0.5;
-
-                        const taxWithChildren = getTax(rni, baseParts + childParts);
-                        const taxWithoutChildren = getTax(rni, baseParts);
-                        const currentQfGainYearly = Math.min(taxWithoutChildren - taxWithChildren, childParts * 2 * QF_CEILING_PER_HALF_PART);
-
-                        const monthlyCurrentSupport = (currentQfGainYearly / 12) + getCurrentCafAlloc(children, rni);
-                        const monthlyNewSupport = children * newAmountPerChild;
+                        const monthlyCurrentSupport = computeCurrentMonthlySupport(struct.isSolo, children, monthlyIncomeFoyer);
+                        const monthlyNewSupport = computeNewMonthlySupport(children, newAmountPerChild);
 
                         totalCurrentCostYearly += (monthlyCurrentSupport * 12) * sampleWeight * TOTAL_FAMILIES;
                         totalNewCostYearly += (monthlyNewSupport * 12) * sampleWeight * TOTAL_FAMILIES;
@@ -432,22 +543,20 @@
         // ---- CALCUL PRINCIPAL ----
         function calculate() {
             const isSolo = document.getElementById('status').value === 'solo';
-            const children = parseInt(document.getElementById('children').value) || 0;
-            const monthlyIncome = parseFloat(document.getElementById('income').value) || 0;
+
+            // Garde-fou : le modèle n'est défini qu'à partir de 1 enfant (un champ vide,
+            // à 0 ou négatif produirait des parts fiscales négatives et un résultat absurde).
+            const childrenInput = document.getElementById('children');
+            let children = parseInt(childrenInput.value);
+            if (!Number.isFinite(children) || children < 1) children = 1;
+            if (children > 10) children = 10;
+            if (String(children) !== childrenInput.value) childrenInput.value = children;
+
+            const monthlyIncome = Math.max(0, parseFloat(document.getElementById('income').value) || 0);
             const newAmountPerChild = parseFloat(document.getElementById('newAmount').value) || 0;
 
-            const rni = (monthlyIncome * 12) * 0.90;
-            const baseParts = isSolo ? 1 : 2;
-
-            let childParts = children === 1 ? 0.5 : (children === 2 ? 1 : 1 + (children - 2));
-            if (isSolo && children >= 1) childParts += 0.5;
-
-            const taxWithChildren = getTax(rni, baseParts + childParts);
-            const taxWithoutChildren = getTax(rni, baseParts);
-            const currentQfGainYearly = Math.min(taxWithoutChildren - taxWithChildren, childParts * 2 * QF_CEILING_PER_HALF_PART);
-
-            const totalCurrentMonthlySupport = (currentQfGainYearly / 12) + getCurrentCafAlloc(children, rni);
-            const monthlyNewAlloc = children * newAmountPerChild;
+            const totalCurrentMonthlySupport = computeCurrentMonthlySupport(isSolo, children, monthlyIncome);
+            const monthlyNewAlloc = computeNewMonthlySupport(children, newAmountPerChild);
             const netMonthlyDiff = Math.round(monthlyNewAlloc - totalCurrentMonthlySupport);
 
             document.getElementById('label-current').innerText = `${Math.round(totalCurrentMonthlySupport)} € / mois`;
@@ -465,11 +574,15 @@
             const macro = runMacroSimulationAndRenderChart(newAmountPerChild);
 
             const budgetBadge = document.getElementById('macro-budget');
-            if (macro.netBudgetBillion >= 0) {
-                budgetBadge.innerText = `Excédent : +${macro.netBudgetBillion.toFixed(1)} Mds€ / an`;
+            const absBudget = Math.abs(macro.netBudgetBillion);
+            if (absBudget < 0.05) {
+                budgetBadge.innerText = `Quasi neutre (écart < 0,1 Md€ / an)`;
+                budgetBadge.className = "text-xs font-black px-2.5 py-1 rounded-xl bg-slate-100 text-slate-600";
+            } else if (macro.netBudgetBillion > 0) {
+                budgetBadge.innerText = `Économie : +${absBudget.toFixed(1)} Mds€ / an`;
                 budgetBadge.className = "text-xs font-black px-2.5 py-1 rounded-xl bg-emerald-100 text-emerald-800";
             } else {
-                budgetBadge.innerText = `Déficit : ${macro.netBudgetBillion.toFixed(1)} Mds€ / an`;
+                budgetBadge.innerText = `Surcoût : -${absBudget.toFixed(1)} Mds€ / an`;
                 budgetBadge.className = "text-xs font-black px-2.5 py-1 rounded-xl bg-rose-100 text-rose-800";
             }
 
