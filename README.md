@@ -2,16 +2,16 @@
 
 > **Accéder directement au simulateur :** [https://justice-enfants.github.io/un-enfant-vaut-un-enfant/](https://justice-enfants.github.io/un-enfant-vaut-un-enfant/)
 
-Ce projet est une initiative citoyenne, transparente et open-source. Elle vise à ouvrir le débat public sur une réforme de la politique familiale française : **le remplacement du quotient familial par une allocation universelle et unique dès le premier enfant.**
+Ce projet est une initiative citoyenne, transparente et open-source. Elle vise à ouvrir le débat public sur une réforme de la politique familiale française : **le remplacement du système actuel (quotient familial + prestations familiales de base) par une allocation universelle et unique dès le premier enfant.**
 
 ---
 
 ## 💡 Le Constat : Pourquoi ce simulateur ?
 
-Le système fiscal actuel repose sur le mécanisme du **quotient familial**. En réduisant l'impôt de manière proportionnelle à la tranche marginale d'imposition, l'État accorde indirectement une aide publique par enfant plus élevée aux familles à hauts revenus qu'aux familles modestes ou de la classe moyenne inférieure. 
+Le modèle actuel combine deux mécanismes distincts : l'avantage fiscal du **quotient familial** (géré par les impôts) et les **prestations familiales de base** (gérées par la CAF). En réduisant l'impôt de manière proportionnelle à la tranche marginale d'imposition, le quotient familial accorde indirectement une aide publique par enfant nettement plus élevée aux familles à hauts revenus qu'aux familles modestes ou de la classe moyenne.
 
-* **Le modèle actuel :** Plus les revenus sont élevés, plus l'avantage fiscal lié à l'enfant est important (jusqu'au plafond légal).
-* **Le modèle proposé :** Chaque enfant donne droit à la même somme directe sous forme d'allocation universelle, peu importe le revenu de ses parents.
+* **Le système actuel (QF + CAF) :** Plus les revenus du foyer sont élevés, plus l'effort de solidarité de l'État par enfant est important (jusqu'au plafond légal), tandis que les prestations de la CAF décroissent ou s'annulent.
+* **Le modèle proposé (Allocation unique) :** Fusion complète du QF et des prestations de base. Chaque enfant donne droit à la même somme directe sous forme d'allocation universelle, **dès le premier enfant**, peu importe le revenu de ses parents.
 
 Ce simulateur permet à chaque citoyen de calculer instantanément ce qu'il y gagnerait (ou perdrait) si la France adoptait ce principe fondamental : **un enfant vaut un enfant.**
 
@@ -29,7 +29,7 @@ Ce simulateur permet à chaque citoyen de calculer instantanément ce qu'il y ga
 
 La précision des calculs est essentielle pour la crédibilité du débat. Ce simulateur s'appuie rigoureusement sur la législation en vigueur :
 
-* **Barème de l'impôt sur le revue 2026 :** Intégration des tranches d'imposition et calculs basés sur l'**Article 197 du Code Général des Impôts (CGI)**.
+* **Barème de l'impôt sur le revenu 2026 :** Intégration des tranches d'imposition et calculs basés sur l'**Article 197 du Code Général des Impôts (CGI)**.
 * **Prestations familiales :** Prise en compte des plafonds de ressources et des montants des allocations de la **CAF** actuellement applicables.
 * **Calcul du quotient :** Gestion stricte des demi-parts, parts supplémentaires et plafonnements des effets du quotient familial.
 
